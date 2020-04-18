@@ -1,7 +1,7 @@
 {
-  "name": "hitch.ai plugin",
+  "name": "Hitch.Ai plugin",
   "version": "1.0",
-  "description": "Fix an Extension!",
+  "description": "Hitch.Ai integration allow us to start swiping",
   "permissions": [
       "webRequest",
       "webRequestBlocking",
