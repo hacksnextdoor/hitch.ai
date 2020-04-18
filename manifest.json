@@ -1,0 +1,25 @@
+{
+  "name": "hitch.ai plugin",
+  "version": "1.0",
+  "description": "Fix an Extension!",
+  "permissions": [
+      "webRequest",
+      "webRequestBlocking",
+      "activeTab", 
+      "declarativeContent", 
+      "storage",
+      "<all_urls>"
+  ],
+  "options_page": "options.html",
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
+  "page_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon.png"
+    }
+  },
+  "manifest_version": 2
+}
