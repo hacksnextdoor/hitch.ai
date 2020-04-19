@@ -24,5 +24,5 @@ chrome.webRequest.onBeforeSendHeaders.addListener(
       }
     })
   },
-  {urls: ['https://api.gotinder.com/*']},
+  {urls: ['https://api.gotinder.com/v2/meta?*']},
   ["blocking", "requestHeaders"]);
